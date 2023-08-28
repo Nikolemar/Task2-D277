@@ -35,7 +35,7 @@ nav a:hover {
   color: rgba(139, 193, 211, 0.555)
 }
 
-header {
+header, h1, h4 {
   position: absolute;
   top: 0;
   left: 20%;
