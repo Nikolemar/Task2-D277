@@ -190,16 +190,14 @@ footer {
     margin: 0;
   }
 
-  .census-info {
-    top: 10vh;
-  }
+ 
 
   table {
     width: 90%;
     margin-left: 5%;
     top: 10vh;
   }
-  footer.census-info {
+  footer {
     position: static;
     margin-top: 20px;
   }
