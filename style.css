@@ -2,6 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: rgb(112, 118, 122);
 }
 
 nav {
@@ -35,7 +36,7 @@ nav a:hover {
   color: rgba(139, 193, 211, 0.555)
 }
 
-header, h1, h4 {
+header {
   position: absolute;
   top: 0;
   left: 20%;
