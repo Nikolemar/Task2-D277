@@ -145,3 +145,63 @@ footer {
   background-color: #92C4EE;
 }
 
+/* Mobile Phones */
+@media only screen and (max-width: 600px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  nav {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 5% 0;
+  }
+
+  nav a {
+    padding: 5% 0;
+  }
+
+  header {
+    position: static;
+    left: 0;
+    width: 100%;
+  }
+
+  section,
+  aside {
+    width: 90%;
+    margin: 5% 5% 0;
+  }
+
+  form {
+    left: 5%;
+    width: 90%;
+  }
+
+  .map,
+  .pr-usFlag {
+    width: 100%;
+    margin: 0;
+  }
+
+  .census-info {
+    top: 10vh;
+  }
+
+  table {
+    width: 90%;
+    margin-left: 5%;
+    top: 10vh;
+  }
+
+  footer {
+    position: static;
+  }
+
+}
