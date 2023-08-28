@@ -24,11 +24,11 @@
       <figcaption>Image by Paolo Nespoli ESA/NASA <a href="https://www.flickr.com/photos/astro_paolo/5363158747" target="_blank">link</a></figcaption>
     </figure>
   </section>
-<aside>
+  <aside>
     <h3>Quick Facts</h3>
     <ol>
       <li>
-          Although not a state, Puerto Rico is a commonwealth, which means it is a self-governing territory of the United States.
+        Although not a state, Puerto Rico is a commonwealth, which means it is a self-governing territory of the United States.
       </li>
       <li>
         Puerto Rico is an archipelago, which means it is made up of several islands.
@@ -41,26 +41,30 @@
       </li>
     </ol>
     <figure>
-    <image src="/images/prmap.png" alt="Puerto Rico Map" class="map" width="350px">
+      <img src="/images/prmap.png" alt="Puerto Rico Map" class="map" width="350px">
     </figure>
-</aside>
+  </aside>
 
-<form id="Form">
-  <h5>Confirm email address:</h5>
-  <label for="firstName">First Name:</label>
-  <input type="text" id="firstName" placeholder="Enter first name" required><br>
+  <form id="Form">
+    <h5>Confirm email address:</h5>
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" placeholder="Enter first name" required><br>
 
-  <label for="lastName">Last Name:</label>
-  <input type="text" id="lastName" placeholder="Enter last name" required><br>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" placeholder="Enter last name" required><br>
 
-  <label for="email">Email Address:</label>
-  <input type="email" id="email" placeholder="Enter email address" required><br>
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" placeholder="Enter email address" required><br>
 
-  <label for="confirmEmail">Confirm Email Address:</label>
-  <input type="email" id="confirmEmail" placeholder="Confirm email address" required><br>
-  <button type="button" id="verifyEmails">Verify Emails</button>
-</form>
-<p id="response"></p>
+    <label for="confirmEmail">Confirm Email Address:</label>
+    <input type="email" id="confirmEmail" placeholder="Confirm email address" required><br>
+
+    <label for="question">Your Question:</label>
+    <textarea id="question" placeholder="Enter your question"></textarea><br>
+
+    <button type="button" id="verifyEmails">Verify Emails</button>
+  </form>
+  <p id="response"></p>
   <script>
     let verifyButton = document.querySelector("#verifyEmails");
     let responseArea = document.querySelector("#response");
@@ -83,3 +87,4 @@
   Population estimates and Income Level from <a href="https://www.census.gov/" target="_blank">census.gov</a>
 </footer>
 </html>
+
