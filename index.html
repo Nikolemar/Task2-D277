@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400&family=Lato:wght@300&family=Lora:ital@1&family=Space+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <title>Puerto Rico</title>
 </head>
@@ -20,31 +23,36 @@
   </header>
   <section>
     <figure>
-      <img src="/images/prskyview.jpg" alt="Puerto Rico from the sky" width="350px">
+      <img src="/images/prskyview.jpg" alt="Puerto Rico from the sky" width="200">
       <figcaption>Image by Paolo Nespoli ESA/NASA <a href="https://www.flickr.com/photos/astro_paolo/5363158747" target="_blank">link</a></figcaption>
     </figure>
+    <p style="text-indent: 2em;" class="main-paragraph">
+      Delve into Puerto Rico's unique characteristics. This captivating archipelago, composed of multiple islands, offers diverse landscapes and cultures. The tropical nature of the island blesses it with constant warmth and sunshine, making it an inviting destination. As a distinctive U.S. territory, Puerto Rico maintains a significant connection with the nation's framework. Explore its culinary delights, vibrant music scene, and historical landmarks, including the renowned Bacardi distillery.
+    </p>
   </section>
+  
+  
   <aside>
     <h3>Quick Facts</h3>
     <ol>
       <li>
-        Although not a state, Puerto Rico is a commonwealth, which means it is a self-governing territory of the United States.
+        Puerto Rico's cuisine is a fusion of Spanish, African, and Taino influences
       </li>
       <li>
-        Puerto Rico is an archipelago, which means it is made up of several islands.
+        Bomba and plena are traditional Puerto Rican music and dance styles with African and Spanish roots. 
       </li>
       <li>
-        Puerto Rico is a tropical island, which means it is always warm and sunny.
+        Puerto Rico's long history with rum production is deeply intertwined with its culture. 
       </li>
       <li>
-        Puerto Rico is a territory of the United States, which means it is a part of the United States.
+        Puerto Rico hosts numerous festivals celebrating its music and culture. 
       </li>
     </ol>
     <figure>
-      <img src="/images/prmap.png" alt="Puerto Rico Map" class="map" width="350px">
+      <img src="/images/pr-usflags.png" alt="Puerto Rico and US Flag" width="350px" class="pr-usFlag">
     </figure>
   </aside>
-
+<div id="form"> 
   <form id="Form">
     <h5>Confirm email address:</h5>
     <label for="firstName">First Name:</label>
@@ -65,6 +73,7 @@
     <button type="button" id="verifyEmails">Verify Emails</button>
   </form>
   <p id="response"></p>
+</div>
   <script>
     let verifyButton = document.querySelector("#verifyEmails");
     let responseArea = document.querySelector("#response");
@@ -85,5 +94,7 @@
 </body>
 <footer class="census-info"> 
   Population estimates and Income Level from <a href="https://www.census.gov/" target="_blank">census.gov</a>
+  <p></p>
+
 </footer>
 </html>
