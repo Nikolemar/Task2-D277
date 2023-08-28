@@ -199,7 +199,7 @@ footer {
     margin-left: 5%;
     top: 10vh;
   }
-  footer {
+  footer.census-info {
     position: static;
     margin-top: 20px;
   }
