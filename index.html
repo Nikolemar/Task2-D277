@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Puerto Rico</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sanjuan.html" target="_blank">San Juan</a></li>
+      <li><a href="rincon.html" target="_blank">Rincon</a></li>
+      <li><a href="fajardo.html" target="_blank">Fajardo</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h1>Puerto Rico</h1>
+  </header>
+  <section>
+    <figure>
+      <img src="/images/prskyview.jpg" alt="Puerto Rico from the sky" width="350px">
+      <figcaption>Image by Paolo Nespoli ESA/NASA <a href="https://www.flickr.com/photos/astro_paolo/5363158747" target="_blank">link</a></figcaption>
+    </figure>
+  </section>
+<aside>
+    <h3>Quick Facts</h3>
+    <ol>
+      <li>
+          Although not a state, Puerto Rico is a commonwealth, which means it is a self-governing territory of the United States.
+      </li>
+      <li>
+        Puerto Rico is an archipelago, which means it is made up of several islands.
+      </li>
+      <li>
+        Puerto Rico is a tropical island, which means it is always warm and sunny.
+      </li>
+      <li>
+        Puerto Rico is a territory of the United States, which means it is a part of the United States.
+      </li>
+    </ol>
+    <figure>
+    <image src="/images/prmap.png" alt="Puerto Rico Map" class="map" width="350px">
+    </figure>
+</aside>
+
+<form id="Form">
+  <h5>Confirm email address:</h5>
+  <label for="firstName">First Name:</label>
+  <input type="text" id="firstName" placeholder="Enter first name" required><br>
+
+  <label for="lastName">Last Name:</label>
+  <input type="text" id="lastName" placeholder="Enter last name" required><br>
+
+  <label for="email">Email Address:</label>
+  <input type="email" id="email" placeholder="Enter email address" required><br>
+
+  <label for="confirmEmail">Confirm Email Address:</label>
+  <input type="email" id="confirmEmail" placeholder="Confirm email address" required><br>
+  <button type="button" id="verifyEmails">Verify Emails</button>
+</form>
+<p id="response"></p>
+  <script>
+    let verifyButton = document.querySelector("#verifyEmails");
+    let responseArea = document.querySelector("#response");
+
+    verifyButton.addEventListener("click", function() {
+      let email = document.querySelector("#email").value;
+      let confirmEmail = document.querySelector("#confirmEmail").value;
+
+      if (email === confirmEmail) {
+        responseArea.textContent = "Emails match!";
+        responseArea.style.color = "green";
+      } else {
+        responseArea.textContent = "Emails do not match.";
+        responseArea.style.color = "red";
+      }
+    });
+  </script>
+</body>
+<footer class="census-info"> 
+  Population estimates and Income Level from <a href="https://www.census.gov/" target="_blank">census.gov</a>
+</footer>
+</html>
